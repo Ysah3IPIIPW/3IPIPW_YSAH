@@ -78,8 +78,10 @@
                     $op = "+";
                     
                     function Adicao($arg1, $arg2){
-                                $resul = $arg1 + $arg2;
+                                $resul = $arg1 + $arg2; // Com variável
+                                // $arg1 + $arg2;          Sem variável
                                 return $resul;
+                                // return $arg1 + $arg2;   
                             }     
 
                             $valor = Adicao(100,200); 
@@ -90,6 +92,23 @@
                                     echo "<br>";
                                     echo $valor;
                             }
+
+                            /*Com switch
+                            
+                            $num1 =30;
+                            $num2 = 100;
+                            $op = "+";
+
+                            switch ($op) {
+                                case "+": 
+                                    $soma = Adicao($num1, num2);
+                                        echo "O resultado de $num1 + $num2: " . $soma;
+                                        break
+                                case "+": 
+                                    Adicao($num1, num2);
+                                    break;
+                            }
+                            */
             
                 echo "<h3>Operação: Subtração</h3>";
                     // Declarando operação
